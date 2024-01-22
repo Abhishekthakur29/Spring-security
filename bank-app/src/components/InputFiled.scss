@@ -1,0 +1,38 @@
+/* InputField.css */
+.InputField {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    position: relative;
+    outline: none;
+  }
+  
+  .InputField:before,
+  .InputField:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #ccc;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .InputField:before {
+    transform: translateX(-50%);
+  }
+  
+  .InputField:after {
+    transform: translateX(-50%);
+  }
+  
+  .InputField:focus:before,
+  .InputField:focus:after {
+    width: 50%;
+    background-color: #2196F3;
+  }
+  

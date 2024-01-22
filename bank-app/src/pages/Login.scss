@@ -1,0 +1,59 @@
+$primary-color: aqua;
+$secondary-color: white;
+$font-color:#0c015c;
+$header-color:#fca503;
+.loginContainer {
+  position: absolute;
+  background-color: #1d12122e;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 90%;
+  perspective: 1000px;
+  .loginMain {
+    position: relative;
+    display: flex;
+    width: 70%;
+    height: 70%;
+    align-items: stretch;
+    margin: 5% 15% 0 15%;
+    background: grey;
+    border-radius: 6px;
+    transform-style: preserve-3d;
+  transition: transform 0.5s ease-in-out;
+    .signUpComponent {
+      clip-path: polygon(38% 0, 100% 0%, 100% 100%, 0% 100%);
+      background-color: purple;
+      width: 50%;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: aqua;
+      font-size: larger;
+    }
+    .loginComponent {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      height: auto;
+      border-radius: 6px;
+    }
+    .UserHeader{
+      width: 100%;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 500;
+      font-size: 2em;
+      font-style: italic;
+      z-index: 1;
+      color: $font-color;
+    }
+  }
+  
+}
